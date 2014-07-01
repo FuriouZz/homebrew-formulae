@@ -4,6 +4,7 @@ class DeveloperGroup < Cask
   # IDE
   depends_on cask: 'atom'
   depends_on cask: 'sublime-text'
+  # depends_on cask: 'macvim'
 
   # VCS
   depends_on cask: 'tower'
@@ -18,6 +19,5 @@ class DeveloperGroup < Cask
   depends_on cask: 'transmit'
   depends_on cask: 'quicklook-json'
   depends_on cask: 'cocoarestclient'
-  depends_on cask: 'cocoapacketanalyzer'
   depends_on cask: 'speedlimit'
 end
