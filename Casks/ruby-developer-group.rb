@@ -5,6 +5,7 @@ class RubyDeveloperGroup < Cask
   # Binaries brews
   depends_on formula: 'postgresql'
   depends_on formula: 'rbenv'
+  depends_on formula: 'ruby-build'
 
   depends_on cask: 'sequel-pro'
   depends_on cask: 'anvil'
