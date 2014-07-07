@@ -5,5 +5,5 @@ Contain Formulae and Casks
 ## Install
 
 ```shell
-$ brew bundle
+$ curl -L https://raw.githubusercontent.com/hellobitches/homebrew-formulae/master/install.sh | sh
 ```
