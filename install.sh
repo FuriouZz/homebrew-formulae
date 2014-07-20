@@ -18,35 +18,41 @@ tap caskroom/fonts # Todo check if already tapped
 
 # For android developers.
 echo ""
-read -n 1 -p "Do you wish to install this Android developer group?" yn
+echo -e -n "Do you wish to install this \033[0;32mAndroid developer\033[0m group? [yn] "
+read -n 1 yn
 case $yn in
     [Yy]* ) brew cask install android-developer-group;
 esac
 
 # For ruby developers.
 echo ""
-read -n 1 -p "Do you wish to install this Ruby developer group?" yn
+echo -e -n "Do you wish to install this \033[32mRuby developer\033[0m group? [yn] "
+read -n 1 yn
 case $yn in
     [Yy]* ) brew cask install ruby-developer-group;
 esac
 
 # For designers.
 echo ""
-read -n 1 -p "Do you wish to install this designer group?" yn
+echo -e -n "Do you wish to install this \033[32mdesigner\033[0m group? [yn] "
+read -n 1 yn
 case $yn in
     [Yy]* ) brew cask install designer-group;
 esac
 
 # For devops.
 echo ""
-read -n 1 -p "Do you wish to install this devops group?" yn
+echo -e -n "Do you wish to install this \033[32mdevops\033[0m group? [yn] "
+read -n 1 yn
 case $yn in
     [Yy]* ) brew cask install devops-group;
 esac
 
 # For project managers.
 echo ""
-read -n 1 -p "Do you wish to install this project manager group?" yn
+echo -e -n "Do you wish to install this \033[32mproject manager\033[0m group? [yn] "
+read -n 1 yn
 case $yn in
     [Yy]* ) brew cask install project-manager-group;
 esac
+echo ""
