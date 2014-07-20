@@ -3,4 +3,5 @@ class DesignerGroup < Cask
   depends_on cask: 'fonts-group'
 
   depends_on cask: 'adobe-creative-cloud'
+  depends_on cask: 'sketch'
 end
