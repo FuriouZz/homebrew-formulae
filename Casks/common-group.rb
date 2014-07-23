@@ -28,5 +28,6 @@ class CommonGroup < Cask
 
   depends_on cask: 'mysqlworkbench'
   depends_on cask: 'xmind'
+  depends_on cask: 'balsamiq-mockups'
   depends_on cask: 'omnigraffle'
 end
