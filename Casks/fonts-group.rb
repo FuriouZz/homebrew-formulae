@@ -4,6 +4,7 @@ class DesignerGroup < Cask
   depends_on cask: 'font-arvo'
   depends_on cask: 'font-code'
   depends_on cask: 'font-comic-neue'
+  depends_on cask: 'font-devicons'
   depends_on cask: 'font-fira-sans'
   depends_on cask: 'font-fontawesome'
   depends_on cask: 'font-lato'
