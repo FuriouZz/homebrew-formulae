@@ -3,5 +3,5 @@ class AndroidDeveloperGroup < Cask
   depends_on cask: 'developer-group'
 
   # IDE
-  depends_on cask: 'android-studio'
+  depends_on cask: 'android-studio-bundle'
 end
