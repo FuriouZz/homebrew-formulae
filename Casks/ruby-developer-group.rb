@@ -8,5 +8,6 @@ class RubyDeveloperGroup < Cask
   depends_on formula: 'ruby-build'
 
   depends_on cask: 'sequel-pro'
+  depends_on cask: 'pg-commander'
   depends_on cask: 'anvil'
 end
