@@ -21,7 +21,9 @@ echo ""
 echo -e -n "Do you wish to install this \033[0;32mAndroid developer\033[0m group? [yn] "
 read -n 1 yn
 case $yn in
-    [Yy]*) brew cask install android-developer-group;
+    [Yy]*)
+        brew cask install android-developer-group
+        ;;
 esac
 
 # For ruby developers.
