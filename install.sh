@@ -21,7 +21,7 @@ echo ""
 echo -e -n "Do you wish to install this \033[0;32mAndroid developer\033[0m group? [yn] "
 read -n 1 yn
 case $yn in
-    [Yy]* ) brew cask install android-developer-group;
+    [Yy]*) brew cask install android-developer-group;
 esac
 
 # For ruby developers.
@@ -29,7 +29,7 @@ echo ""
 echo -e -n "Do you wish to install this \033[32mRuby developer\033[0m group? [yn] "
 read -n 1 yn
 case $yn in
-    [Yy]* ) brew cask install ruby-developer-group;
+    [Yy]*) brew cask install ruby-developer-group;
 esac
 
 # For designers.
@@ -37,7 +37,7 @@ echo ""
 echo -e -n "Do you wish to install this \033[32mdesigner\033[0m group? [yn] "
 read -n 1 yn
 case $yn in
-    [Yy]* ) brew cask install designer-group;
+    [Yy]*) brew cask install designer-group;
 esac
 
 # For devops.
@@ -45,7 +45,7 @@ echo ""
 echo -e -n "Do you wish to install this \033[32mdevops\033[0m group? [yn] "
 read -n 1 yn
 case $yn in
-    [Yy]* ) brew cask install devops-group;
+    [Yy]*) brew cask install devops-group;
 esac
 
 # For project managers.
@@ -53,6 +53,6 @@ echo ""
 echo -e -n "Do you wish to install this \033[32mproject manager\033[0m group? [yn] "
 read -n 1 yn
 case $yn in
-    [Yy]* ) brew cask install project-manager-group;
+    [Yy]*) brew cask install project-manager-group;
 esac
 echo ""
