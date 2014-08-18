@@ -11,5 +11,6 @@ class RubyDeveloperGroup < Cask
   depends_on cask: 'sequel-pro'
 
   # Ruby and Ruby on Rails tools
+  depends_on cask: 'pg-commander'
   depends_on cask: 'anvil'
 end

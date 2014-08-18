@@ -1,9 +1,10 @@
-class DesignerGroup < Cask
+class FontsGroup < Cask
   depends_on cask: 'font-actor'
   depends_on cask: 'font-aleo'
   depends_on cask: 'font-arvo'
   depends_on cask: 'font-code'
   depends_on cask: 'font-comic-neue'
+  depends_on cask: 'font-devicons'
   depends_on cask: 'font-fira-sans'
   depends_on cask: 'font-fontawesome'
   depends_on cask: 'font-lato'
