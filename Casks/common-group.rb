@@ -22,10 +22,12 @@ class CommonGroup < Cask
   depends_on cask: 'jumpcut'
   # depends_on cask: 'reflector'
 
+  # Images
   depends_on cask: 'imageoptim'
   depends_on cask: 'imagealpha'
   # depends_on cask: 'texturepacker'
 
+  # Conception
   depends_on cask: 'mysqlworkbench'
   depends_on cask: 'xmind'
   depends_on cask: 'omnigraffle'
