@@ -18,6 +18,9 @@ brew cask alfred link
 brew tap hellobitches/formulae # Todo check if already tapped
 brew tap caskroom/fonts # Todo check if already tapped
 
+# Install common group
+brew cask install common-group
+
 # For android developers.
 echo ""
 echo "Do you wish to install this \033[0;32mAndroid developer\033[0m group? [yn] \c"
