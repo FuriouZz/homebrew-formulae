@@ -13,8 +13,8 @@ brew install caskroom/cask/brew-cask # Todo check if already installed or 2&>1
 brew cask alfred link
 
 # Tap dependents repositories
-tap hellobitches/formulae # Todo check if already tapped
-tap caskroom/fonts # Todo check if already tapped
+brew tap hellobitches/formulae # Todo check if already tapped
+brew tap caskroom/fonts # Todo check if already tapped
 
 # For android developers.
 echo ""
