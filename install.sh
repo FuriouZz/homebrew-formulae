@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # To use this file just excute the command line bellow:
-# $ sh <(curl -sSL https://raw.githubusercontent.com/hellobitches/homebrew-formulae/master/install.sh) 
+# $ sh <(curl -sSL https://raw.githubusercontent.com/hellobitches/homebrew-formulae/master/install.sh)
 
 set -e
 
@@ -21,63 +21,26 @@ brew tap caskroom/fonts # Todo check if already tapped
 # Install common group
 brew cask install common-group
 
-# For android developers.
-echo ""
-echo "Do you wish to install this \033[0;32mAndroid developer\033[0m group? [yn] \c"
-read -n 1 yn
+declare -a groups=("android-developer" "ruby-developer" "designer" "devops" "project-manager")
+declare -a groupLabels=("Android developer" "Ruby developer" "Designer" "Devops" "Project manager")
 
-case $yn in
-    [Yy])
-        brew cask install android-developer-group
-        echo "\033[32minstalled\033[0m"
-        ;;
-esac
 
-# For ruby developers.
-echo ""
-echo "Do you wish to install this \033[32mRuby developer\033[0m group? [yn] \c"
-read -n 1 yn
+# for (( i = 0 ; i < ${#groups[@]} ; i++ )) do
+#   echo ${names[$i]}
 
-case $yn in
-    [Yy])
-        brew cask install ruby-developer-group
-        echo "\033[32minstalled\033[0m"
-        ;;
-esac
+# for k in "${groups[@]}"
+for (( i = 0 ; i < ${#groups[@]} ; i++ )) do
 
-# For designers.
-echo ""
-echo "Do you wish to install this \033[32mdesigner\033[0m group? [yn] \c"
-read -n 1 yn
+    echo ""
+    echo "Do you wish to install this \033[0;32m${groupLabels["$i"]}\033[0m group? [yn] \c"
+    read -n 1 yn
 
-case $yn in
-    [Yy])
-        brew cask install designer-group
-        echo "\033[32minstalled\033[0m"
-        ;;
-esac
+    case $yn in
+        [Yy])
+            brew cask install "${groups["$i"]}-group"
+            echo "\033[32minstalled\033[0m"
+            ;;
+    esac
+done
 
-# For devops.
-echo ""
-echo "Do you wish to install this \033[32mdevops\033[0m group? [yn] \c"
-read -n 1 yn
-
-case $yn in
-    [Yy])
-        brew cask install devops-group
-        echo "\033[32minstalled\033[0m"
-        ;;
-esac
-
-# For project managers.
-echo ""
-echo "Do you wish to install this \033[32mproject manager\033[0m group? [yn] \c"
-read -n 1 yn
-
-case $yn in
-    [Yy])
-        brew cask install project-manager-group
-        echo "\033[32minstalled\033[0m"
-        ;;
-esac
 echo ""
