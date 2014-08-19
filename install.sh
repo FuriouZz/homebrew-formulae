@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # To use this file just excute the command line bellow:
-# sh <(curl -sSL http://projects.dev/hellobitches/homebrew-formulae/install.sh)
+# $ sh <(curl -sSL https://raw.githubusercontent.com/hellobitches/homebrew-formulae/master/install.sh) 
 
 set -e
 
