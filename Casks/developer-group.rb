@@ -20,4 +20,6 @@ class DeveloperGroup < Cask
   depends_on cask: 'quicklook-json'
   depends_on cask: 'cocoarestclient'
   depends_on cask: 'speedlimit'
+
+  depends_on cask: 'limechat'
 end

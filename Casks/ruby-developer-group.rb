@@ -9,8 +9,8 @@ class RubyDeveloperGroup < Cask
 
   # Database client
   depends_on cask: 'sequel-pro'
+  depends_on cask: 'pg-commander'
 
   # Ruby and Ruby on Rails tools
-  depends_on cask: 'pg-commander'
   depends_on cask: 'anvil'
 end
