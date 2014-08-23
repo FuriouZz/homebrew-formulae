@@ -52,3 +52,13 @@ for (( i = 0 ; i < ${#groups[@]} ; i++ )) do
 done
 
 echo ""
+
+# # Lauchnctl to auto brewupgrade
+#
+# if [ `launchctl list | grep 'es.hellobitch.brewupgrade$'` ]; then
+#   launchctl unload ~/Library/LaunchAgents/es.hellobitch.brewupgrade.plist > /dev/null 2>&1;
+# fi
+#
+# mkdir ~/Library/LaunchAgents/
+# echo `wget -qO- https://raw.githubusercontent.com/hellobitches/homebrew-formulae/master/templates/es.hellobitch.brewupgrade.plist` > ~/Library/LaunchAgents/es.hellobitch.brewupgrade.plist
+# launchctl load ~/Library/LaunchAgents/es.hellobitch.brewupgrade.plist
