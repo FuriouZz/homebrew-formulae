@@ -9,26 +9,34 @@ set -e
 brew update
 
 # Install caksroom
-brew install caskroom/cask/brew-cask # Todo check if already installed or 2&>1
-
-# Link caskroom to alfred
-brew cask alfred link
+if ! [ `brew list -1 | grep '^brew-cask$'` ]; then
+  brew install caskroom/cask/brew-cask
+fi
 
 # Tap dependents repositories
-brew tap hellobitches/formulae # Todo check if already tapped
-brew tap caskroom/fonts # Todo check if already tapped
+if ! [ `brew tap | grep '^hellobitches/formulae$'` ]; then
+  brew tap hellobitches/formulae;
+fi
+
+if ! [ `brew tap | grep '^caskroom/fonts$'` ]; then
+  brew tap caskroom/fonts;
+fi
 
 # Install common group
-brew cask install common-group
+if ! [ `brew list -1 | grep '^common-group$'` ]; then
+  brew cask install common-group
+fi
 
+# Link caskroom to alfred
+if ! [ `brew list -1 | grep '^alfred$'` ]; then
+  brew cask alfred link
+fi
+
+# Declare Cask groups
 declare -a groups=("android-developer" "ruby-developer" "designer" "devops" "project-manager")
 declare -a groupLabels=("Android developer" "Ruby developer" "Designer" "Devops" "Project manager")
 
-
-# for (( i = 0 ; i < ${#groups[@]} ; i++ )) do
-#   echo ${names[$i]}
-
-# for k in "${groups[@]}"
+# Ask to install group
 for (( i = 0 ; i < ${#groups[@]} ; i++ )) do
 
     echo ""
