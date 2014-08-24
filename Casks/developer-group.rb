@@ -1,6 +1,14 @@
 class DeveloperGroup < Cask
   depends_on cask: 'commons-group'
 
+  # Binaries brews
+  depends_on formula: 'openssl'
+  depends_on formula: 'curl'
+  depends_on formula: 'git'
+  depends_on formula: 'wget'
+  depends_on formula: 'tree'
+  depends_on formula: 'vim'
+
   # IDE
   depends_on cask: 'atom'
   depends_on cask: 'sublime-text'
