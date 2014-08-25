@@ -26,6 +26,7 @@ class CommonGroup < Cask
   depends_on cask: 'adobe-reader'
   # depends_on cask: 'reflector'
   # depends_on cask: 'telephone'
+  # depends_on cask: 'poedit'
 
   # Images
   depends_on cask: 'imageoptim'
