@@ -6,4 +6,6 @@ class DesignerGroup < Cask
   depends_on cask: 'sketch'
   depends_on cask: 'sketch-tool'
   depends_on cask: 'sketch-toolbox'
+  
+  depends_on cask: 'skala'
 end
